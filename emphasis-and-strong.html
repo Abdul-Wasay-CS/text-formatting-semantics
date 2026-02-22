@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+  TOPIC 4: TEXT FORMATTING & SEMANTICS
+  FILE: emphasis-and-strong.html
+
+  WHAT:
+    Demonstrates semantic emphasis with <em> and <strong> and compares them
+    to purely visual bold/italic created with CSS.
+
+  HOW:
+    1. Open this file in your browser.
+    2. Compare the "semantic" examples (using <em>/<strong>) with the
+       "visual only" examples (using <span> + CSS).
+    3. (OPTIONAL) Use a screen reader or accessibility tool to see how
+       <em> and <strong> are announced differently.
+
+  WHY:
+    - <em> and <strong> express meaning, not just style.
+    - Screen readers can use them to change voice or emphasis.
+    - CSS-only bold/italic has no semantic meaning by default.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Emphasis &amp; Strong</title>
+    <style>
+      .visually-italic {
+        font-style: italic;
+      }
+
+      .visually-bold {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Emphasis (&lt;em&gt;) and Strong (&lt;strong&gt;)</h1>
+
+    <h2>Semantic Emphasis</h2>
+    <p>
+      When you want to stress a word in a sentence, use
+      <em>emphasis</em> to show that the word should be read
+      with more weight or a different tone.
+    </p>
+
+    <p>
+      When something is of <strong>great importance</strong>, use
+      <code>&lt;strong&gt;</code> to indicate that meaning.
+    </p>
+
+    <h2>Visual Only (CSS)</h2>
+    <p>
+      You can make text <span class="visually-italic">look italic</span> or
+      <span class="visually-bold">look bold</span> using CSS, but this does
+      not convey any extra meaning to assistive technologies.
+    </p>
+
+    <p>
+      The best practice is to use <em>semantic elements</em> first and then
+      style them with CSS, instead of using generic elements purely for style.
+    </p>
+  </body>
+</html>
+

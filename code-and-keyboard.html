@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+  TOPIC 4: TEXT FORMATTING & SEMANTICS
+  FILE: code-and-keyboard.html
+
+  WHAT:
+    Demonstrates code-related inline elements:
+    - <code> for code fragments
+    - <kbd> for user input via keyboard
+    - <samp> for program output samples
+    - <var> for variables in code or math
+
+  HOW:
+    1. Open this file in your browser.
+    2. Notice how each element uses a monospace-like style by default.
+    3. Imagine how these would appear in documentation or tutorials.
+
+  WHY:
+    Using the right semantic elements makes technical documentation
+    more readable and easier to scan.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Code &amp; Keyboard Elements</title>
+  </head>
+  <body>
+    <h1>Code &amp; Keyboard Elements</h1>
+
+    <h2>&lt;code&gt; for Code Fragments</h2>
+    <p>
+      Use <code>&lt;code&gt;</code> when referring to code inline, such as
+      calling the <code>alert()</code> function in JavaScript.
+
+      this snippet is in code
+      <br>  
+      <pre>
+        <code>
+for(int i=0; i&lt;10; i++) {
+  System.out.println(i);
+}
+        </code>
+      </pre>
+    </p>
+
+    <h2>&lt;kbd&gt; for Keyboard Input</h2>
+    <p>
+      
+      <!-- what does this kbd element do?
+      
+      It indicates user input from a keyboard.
+      this is just a demonstration of the kbd element, which is meant to show keyboard input in documentation. 
+      It doesn't actually capture input.
+      so its just for formatting text to look like keyboard input, 
+      not for real interaction? Exactly! 
+      It helps readers understand that the text represents keys they should press.
+      why not just use code tag for this? While <code> can be used for code snippets, 
+      <kbd> specifically indicates user input, which can help with clarity in instructions.
+      so a clear structure for the developer documentation is to use 
+      <code> for code examples and <kbd> for instructions on what keys to press? 
+      Yes, that's a good practice. It helps differentiate between code and user actions.
+      <br>  -->
+
+      To refresh many browsers, press
+      <kbd>Ctrl</kbd> + <kbd>R</kbd> (Windows) or
+      <kbd>Cmd</kbd> + <kbd>R</kbd> (macOS).
+    </p>
+
+    <h2>&lt;samp&gt; for Sample Output</h2>
+    <p>
+      A program might output:
+      <samp>Operation completed successfully.</samp>
+    </p>
+
+    <h2>&lt;var&gt; for Variables</h2>
+    <p>
+      In mathematics, the area of a circle is
+      <var>A</var> = π × <var>r</var><sup>2</sup>.
+    </p>
+  </body>
+</html>
+

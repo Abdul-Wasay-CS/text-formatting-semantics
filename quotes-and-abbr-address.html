@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+  TOPIC 4: TEXT FORMATTING & SEMANTICS
+  FILE: quotes-and-abbr-address.html
+
+  WHAT:
+    Demonstrates:
+    - <blockquote> for long quotations
+    - <q> for short inline quotations
+    - <abbr> for abbreviations
+    - <address> for contact information
+
+  HOW:
+    1. Open this file in your browser.
+    2. Hover over the abbreviation to see a tooltip.
+    3. Observe the visual style differences between block and inline quotes.
+
+  WHY:
+    These elements make your content more meaningful and clearer for
+    both users and search engines.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quotes, Abbreviations &amp; Address</title>
+  </head>
+  <body>
+    <h1>Quotations, Abbreviations &amp; Address</h1>
+
+    <h2>Block Quotes with &lt;blockquote&gt;</h2>
+    <!--
+      <blockquote> is used for longer, standalone quotations.
+      Browsers often indent or style it differently by default.
+    -->
+    <blockquote>
+      “Learning HTML is like learning the alphabet of the web. Once you know
+      the letters, you can start forming words, sentences, and entire stories.”
+    </blockquote>
+
+    <h2>Inline Quotes with &lt;q&gt;</h2>
+    <p>
+      The author wrote,
+      <q>practice is the key to mastering web development</q>, which is why
+      this project includes many small examples.
+    </p>
+
+    <h2>Abbreviations with &lt;abbr&gt;</h2>
+    <p>
+      The term
+      <abbr title="HyperText Markup Language">HTML</abbr>
+      stands for HyperText Markup Language.
+    </p>
+
+    <h2>Contact Information with &lt;address&gt;</h2>
+    <!--
+      <address> is intended for contact information, not just any postal
+      address. It is often used inside <footer>.
+    -->
+    <address>
+      Example Web Developer<br />
+      123 Learning Street<br />
+      Code City, 00000<br />
+      Email: student@example.com
+    </address>
+  </body>
+</html>
+
