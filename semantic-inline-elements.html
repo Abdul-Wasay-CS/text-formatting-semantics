@@ -36,18 +36,44 @@
       important information in a paragraph.
     </p>
 
+    <p>
+      This is a <mark>very important</mark> point that should not be missed.
+    </p>
+
+    <p>
+      You shall not pass ! <mark> the above parts carefully.</mark>
+    </p>
+
     <h2>&lt;del&gt; and &lt;ins&gt; for Changes</h2>
+    <!-- 
+    
+      Explain these del and ins tags, 
+      
+      they are used to show deleted and inserted text, 
+      often in the context of editing or version control. Browsers typically render <del> with a 
+      strikethrough and <ins> with an underline to visually indicate the changes.
+      
+     -->
     <p>
       Version 1: The price is <del>$50</del>
       <ins>$40</ins> today only.
     </p>
 
-    <h2>&lt;sub&gt; and &lt;sup&gt; for Subscript/Superscript</h2>
+    
+    <!-- 
+    
+        wont using del be a bad idea becuase then we will have to edit the html file every time we want to change the price,
+        yes, you are correct. Using <del> and <ins> for dynamic content like prices is not ideal because it requires manual updates to the HTML. 
+        For dynamic content, it's better to use JavaScript to update the price without needing to edit the HTML structure. 
+        The <del> and <ins> tags are more suitable for static content or when you want to show a specific change in a document, 
+        such as in a revision history or when tracking changes in a collaborative writing environment.
+    
+      -->
     <p>
       Chemical formula: H<sub>2</sub>O (water)
     </p>
     <p>
-      Mathematical expression: x<sup>2</sup> + y<sup>2</sup>
+      Mathematical expression: x<sup>2</sup> + y<sup>2</sup> = z<sup>2</sup>
     </p>
   </body>
 </html>

@@ -23,32 +23,61 @@
   <head>
     <meta charset="UTF-8" />
     <title>Quotes, Abbreviations &amp; Address</title>
+    
+    <style>
+    body{
+        font-family: Arial, sans-serif;
+        background-color: #1d1c1e;
+        color: white;
+      }
+      blockquote{
+        border-left: 5px solid #ccc;
+        background-color: aliceblue;
+        margin: 1em 0;
+        padding: 0.5em 1em;
+        color: black;
+      }
+
+      header {
+        color: rgb(52, 185, 31);
+        padding: 1rem 1rem;
+        background-color: rgb(16, 84, 172);
+        border-radius: 10px;
+        text-align: center;
+      }
+
+    </style>
   </head>
   <body>
-    <h1>Quotations, Abbreviations &amp; Address</h1>
-
+    <header>
+      <h1>Quotations, Abbreviations &amp; Address</h1>
+    </header>
+    <hr>
     <h2>Block Quotes with &lt;blockquote&gt;</h2>
     <!--
       <blockquote> is used for longer, standalone quotations.
       Browsers often indent or style it differently by default.
     -->
     <blockquote>
-      “Learning HTML is like learning the alphabet of the web. Once you know
-      the letters, you can start forming words, sentences, and entire stories.”
+      "Let your plans be dark and impenetrable as night, 
+      and when you move, fall like a thunderbolt." 
+      <br>- Sun Tzu, The Art of War
     </blockquote>
-
+ 
     <h2>Inline Quotes with &lt;q&gt;</h2>
     <p>
       The author wrote,
       <q>practice is the key to mastering web development</q>, which is why
       this project includes many small examples.
     </p>
-
+    <blockquote>
+      Be extremely subtle even to the point of formlessness
+      <br>- Sun Tzu, The Art of War
+    </blockquote>
     <h2>Abbreviations with &lt;abbr&gt;</h2>
     <p>
-      The term
-      <abbr title="HyperText Markup Language">HTML</abbr>
-      stands for HyperText Markup Language.
+      The <abbr title="Institute of Electrical and Electronics Engineers">IEEE</abbr>
+      is a professional association for electronics, electrical engineering, and computer science.
     </p>
 
     <h2>Contact Information with &lt;address&gt;</h2>
@@ -56,12 +85,22 @@
       <address> is intended for contact information, not just any postal
       address. It is often used inside <footer>.
     -->
+    <br/>
     <address>
-      Example Web Developer<br />
-      123 Learning Street<br />
-      Code City, 00000<br />
-      Email: student@example.com
+      My house<br />
+      somewhere in the world <br/>
+      country: Earth <br/>
+      Email: code@gmail.com
     </address>
+    <!-- 
+      why is there a slash in the <br> tag?
+      The <br> tag is a self-closing tag in HTML, which means it does 
+      not require a separate closing tag. 
+      The slash at the end of <br> is a convention from XHTML, where all tags
+      must be closed. In HTML5, you can simply use <br> without the slash, and it will
+      still work correctly. The slash is optional in HTML5 and is often included 
+      for compatibility with older XHTML syntax.
+   -->
   </body>
 </html>
 
